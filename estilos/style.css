@@ -8,14 +8,10 @@ html {
   font-size: 1em;
 }
 
-header {
-  background-color: #209bcc;
-}
-
 footer {
   background-color: #2b3131;
   color: white;
-  padding: 80px;
+  padding: 5% auto auto 5%;
   margin-bottom: 0;
   margin-top: 5%;
 }
