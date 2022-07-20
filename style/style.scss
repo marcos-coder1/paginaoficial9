@@ -1,11 +1,6 @@
-
-html{
-    font-size: 62.5%;
-    font-size: 1em;
-}   
+@import "generales";
 
 footer{
-    display: grid;
     background-color: rgb(43, 49, 49);
     color: white;
     padding: 80px;
@@ -26,8 +21,9 @@ footer{
 }
 
 
+
 .dep{
-    margin-left: 350px;
+    margin-left: 45px;
 }
 
 .pagin{
@@ -35,6 +31,16 @@ footer{
     font-family: 'Rubik', sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.escudoNueve{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 10%;
+    margin-left: 40% ;
+    border:20px inset rgb(63, 157, 189);
+        
 }
 
 #grilla{
@@ -100,7 +106,7 @@ section#info{
     "footer";
 
     grid-template-columns: 100%;
-    grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
     gap: 5px;
 }
 

@@ -1,11 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   font-size: 62.5%;
   font-size: 1em;
 }
 
+header {
+  background-color: #209bcc;
+}
+
 footer {
-  display: -ms-grid;
-  display: grid;
   background-color: #2b3131;
   color: white;
   padding: 80px;
@@ -31,7 +38,7 @@ footer {
 }
 
 .dep {
-  margin-left: 350px;
+  margin-left: 45px;
 }
 
 .pagin {
@@ -41,15 +48,26 @@ footer {
   margin-bottom: 20px;
 }
 
+.escudoNueve {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 10%;
+  margin-left: 40%;
+  border: 20px inset #3f9dbd;
+}
+
 #grilla {
   display: -ms-grid;
   display: grid;
   text-align: center;
-      grid-template-areas: "header header header"
- "nav nav nav"
- "deportes deportes deportes"
- "info info info"
- "footer footer footer";
+      grid-template-areas: "header header header" "nav nav nav" "deportes deportes deportes" "info info info" "footer footer footer";
   -ms-grid-rows: 100px 1fr 1fr 1fr 75px;
       grid-template-rows: 100px 1fr 1fr 1fr 75px;
   -ms-grid-columns: 20% auto 15%;
@@ -106,15 +124,11 @@ section#info {
 #grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header"
- "nav"
- "deportes"
- "info"
- "footer";
+      grid-template-areas: "header" "nav" "deportes" "info" "footer";
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 2fr 2fr 2fr 2fr 2fr;
-      grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+  -ms-grid-rows: 2fr 1fr 1fr 1fr 2fr;
+      grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
   gap: 5px;
 }
 
@@ -122,11 +136,7 @@ section#info {
   #grilla {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header header"
- "nav    nav"
- "deportes deportes "
- "info info"
- "footer footer";
+        grid-template-areas: "header header" "nav    nav" "deportes deportes " "info info" "footer footer";
     -ms-grid-columns: 25% auto;
         grid-template-columns: 25% auto;
     -ms-grid-rows: 2fr 2fr 2fr 2fr 2fr;
@@ -140,11 +150,7 @@ section#info {
   #grilla {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "header header header"
- "nav nav nav"
- "deportes deportes deportes "
- "info info info"
- "footer footer footer";
+        grid-template-areas: "header header header" "nav nav nav" "deportes deportes deportes " "info info info" "footer footer footer";
     -ms-grid-columns: 20% auto 15%;
         grid-template-columns: 20% auto 15%;
     -ms-grid-rows: 2fr 2fr 2fr 2fr 2fr;
